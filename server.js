@@ -14,15 +14,15 @@ app.use(express.static(__dirname + '/public'));
 
 //Slide Code
 app.use((request, response, next) => {
-    var time = new Date().toString();
-    console.log(`${time}: ${request.method} ${request.url}`);
-    // var log = `${time}: ${request.method} ${request.url}`;
-    // fs.appendFile('server.log', log + '\n', (error) => {
-    //     if (error) {
-    //         console.log('Unable to log message');
-    //     }
-    // })
-    // response.send("Site is down");
+    // var time = new Date().toString();
+    // console.log(`${time}: ${request.method} ${request.url}`);
+    // // var log = `${time}: ${request.method} ${request.url}`;
+    // // fs.appendFile('server.log', log + '\n', (error) => {
+    // //     if (error) {
+    // //         console.log('Unable to log message');
+    // //     }
+    // // })
+    response.render("maintenance.hbs");
     next();
 });
 //Slide Code
