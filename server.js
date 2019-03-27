@@ -161,6 +161,7 @@ app.get('/404', (request, response) => {
 
 // #----------- End Points -----------# //
 
+const port = process.env.PORT || 8080;
 
-app.listen(8080);
+app.listen(port);
 console.log("Webapp is now operational!")
