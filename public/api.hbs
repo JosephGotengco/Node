@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="css_js/index.css"/>
+
+</head>
+<body>
+    {{> header}}
+
+    <nav>
+        <ul>
+            <li>
+                <a href="http://localhost:8080/">Home</a>
+            </li>
+            <li>
+                <a href="http://localhost:8080/about">About</a>
+            </li>
+            <li>
+                <a href="http://localhost:8080/convert">API</a>
+            </li>
+        </ul>
+    </nav>
+    <p class="text">{{errorCheck base rate code country}}</p>
+
+    {{!-- {{API country_name}} --}}
+    {{!-- <footer>
+        <p>Copyright {{year}}</p>
+    </footer> --}}
+    
+    {{> footer}}
+
+</body>
+</html>

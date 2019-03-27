@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Staatliches");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Noto+Serif+JP|Srisakdi|Thasadith');
+
+$color1: #2d3436;
+$color2: black;
+$color3: white;
+$nav-bg-color: lighten(black, 40%);
+$nav-color: darken(#636e72, 40%);
+$bg-color: adjust-hue($color: #636e72, $degrees: 0);
+$space1: 10px;
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif JP', serif;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: 'Noto Serif JP', serif;
+}
+
+nav {
+  ul {
+    background-color: $nav-bg-color;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    li {
+      // display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        font-family: "Staatliches", cursive;
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
